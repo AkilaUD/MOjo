@@ -1,0 +1,206 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-espresso: #160d0a;
+  --color-cream: #fff3d6;
+  --color-chili: #8f2d14;
+  --color-mango: #f2a23a;
+  --color-lime: #a7c957;
+  --color-night-pink: #e83e8c;
+
+  --font-display: 'Big Shoulders Display', system-ui, sans-serif;
+  --font-body: 'Newsreader', Georgia, serif;
+
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+}
+
+:root {
+  --mojo-phase: 0;
+  --mojo-bg: #fff3d6;
+  --mojo-ink: #160d0a;
+  --mojo-accent: #f2a23a;
+  --mojo-muted: color-mix(in srgb, var(--mojo-ink) 68%, transparent);
+  color-scheme: light;
+}
+
+.text-muted {
+  color: var(--mojo-muted);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background: var(--mojo-bg);
+  color: var(--mojo-ink);
+  transition: background-color 0.45s ease, color 0.45s ease;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-chili);
+  color: var(--color-cream);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.mojo-label {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.mojo-btn {
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.mojo-btn-primary {
+  display: inline-flex;
+  background: var(--mojo-ink);
+  color: var(--mojo-bg);
+  border: 2px solid var(--mojo-ink);
+}
+
+.mojo-btn-primary:hover {
+  background: var(--color-chili);
+  border-color: var(--color-chili);
+  color: var(--color-cream);
+}
+
+.mojo-btn-outline {
+  display: inline-flex;
+  background: transparent;
+  color: inherit;
+  border: 2px solid currentColor;
+}
+
+.mojo-btn-outline:hover {
+  background: var(--mojo-ink);
+  color: var(--mojo-bg);
+  border-color: var(--mojo-ink);
+}
+
+.mojo-btn-ghost {
+  display: inline-flex;
+  background: transparent;
+  color: inherit;
+  border: 2px solid currentColor;
+}
+
+.mojo-btn-ghost:hover {
+  background: var(--mojo-ink);
+  color: var(--mojo-bg);
+}
+
+.mojo-btn-chili {
+  display: inline-flex;
+  background: var(--color-chili);
+  color: var(--color-cream);
+  border: 2px solid var(--color-chili);
+}
+
+.mojo-btn-cream {
+  display: inline-flex;
+  background-color: #fff3d6;
+  color: #160d0a;
+  border: 2px solid #fff3d6;
+}
+
+.mojo-btn-cream:hover {
+  background-color: var(--color-mango);
+  border-color: var(--color-mango);
+  color: #160d0a;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-chili);
+  outline-offset: 3px;
+}
+
+.grain::before {
+  content: '';
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  opacity: calc(0.03 + var(--mojo-phase) * 0.05);
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.editorial-border {
+  border: 2px solid currentColor;
+}
+
+.mask-reveal {
+  clip-path: inset(0 0 0 0);
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes mojo-seal-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mojo-seal-spin {
+  animation: mojo-seal-spin 48s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mojo-seal-spin {
+    animation: none;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@layer base {
+  button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+  }
+}
