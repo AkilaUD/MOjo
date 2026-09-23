@@ -22,6 +22,7 @@ export const links = {
     'https://www.google.com/maps/search/?api=1&query=300+Sunrise+Highway+Rockville+Centre+NY+11570',
   menuFoHi: 'https://www.mojolatin.com/menu',
   orderToastFoHi: 'https://order.toasttab.com/online/mojofh',
+  cateringEzCater: 'https://www.ezcater.com/catering/mojo-restaurant-queens',
   eventsEmail: 'mailto:events@mojolatin.com',
   blog: 'https://www.mojolatin.com/post',
   privacyPolicy: 'https://www.mojolatin.com/privacy-policy',

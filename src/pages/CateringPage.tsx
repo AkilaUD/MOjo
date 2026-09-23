@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import { InquiryForm } from '../components/InquiryForm'
 import { PageHero } from '../components/PageHero'
 import { useReducedMotion } from '../hooks/useReducedMotion'
 import { MediaImage } from '../lib/MediaImage'
@@ -28,11 +27,13 @@ export function CateringPage() {
         actions={
           <>
             <a
-              href={links.eventsEmail}
+              href={links.cateringEzCater}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mojo-btn mojo-btn-cream"
               style={{ backgroundColor: '#FFF3D6', color: '#160D0A', borderColor: '#FFF3D6' }}
             >
-              Email Catering
+              Order on ezCater
             </a>
             <a
               href={links.phoneFoHi}
@@ -82,12 +83,21 @@ export function CateringPage() {
               We&apos;ll deliver to you
             </h2>
             <p>
-              Tell us your date, guest count, venue, and what you&apos;re craving.
-              We&apos;ll build a spread that tastes like Mojo.
+              Order catering for office lunches, parties, and celebrations on
+              ezCater — or call us and we&apos;ll build a spread that tastes like
+              Mojo.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
-              <a href={links.eventsEmail} className="mojo-btn mojo-btn-primary">
-                Email Catering
+              <a
+                href={links.cateringEzCater}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mojo-btn mojo-btn-primary"
+              >
+                Order on ezCater
+              </a>
+              <a href={links.phoneFoHi} className="mojo-btn mojo-btn-outline">
+                Call 718-261-6162
               </a>
               <a
                 href={links.orderToastFoHi}
@@ -110,11 +120,28 @@ export function CateringPage() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <p className="mojo-label text-chili mb-2">Inquiry</p>
-            <h2 className="font-display text-2xl md:text-3xl font-800 uppercase mb-6">
-              Request a quote
+            <p className="mojo-label text-chili mb-2">ezCater</p>
+            <h2 className="font-display text-2xl md:text-3xl font-800 uppercase mb-4">
+              Queens catering
             </h2>
-            <InquiryForm subject="Mojo Catering Inquiry" />
+            <p className="font-body text-base md:text-lg text-muted mb-6">
+              Browse the Mojo catering menu, pick a delivery window, and place
+              your order online.
+            </p>
+            <a
+              href={links.cateringEzCater}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mojo-btn mojo-btn-primary"
+            >
+              Open ezCater
+            </a>
+            <p className="mt-6 font-body text-base text-muted">
+              Prefer email?{' '}
+              <a href={links.eventsEmail} className="underline text-[var(--mojo-ink)]">
+                events@mojolatin.com
+              </a>
+            </p>
           </motion.div>
         </div>
       </section>
