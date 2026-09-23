@@ -9,7 +9,7 @@ export function ReservePage() {
         label="OpenTable"
         title="Reserve"
         body="Two rooms. One Mojo. Book Forest Hills or Rockville Centre — lunch, brunch, dinner, or late night."
-        image="/media/loc-fohi.png"
+        image="/media/loc-fohi.jpg"
         imageAlt="Mojo Forest Hills dining room"
         actions={
           <>

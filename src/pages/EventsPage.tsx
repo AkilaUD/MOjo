@@ -15,7 +15,7 @@ export function EventsPage() {
         label="Private parties"
         title="Events"
         body="Host celebrations at Mojo — office parties, holidays, birthdays, bridal or baby showers. The Tulum Room seats up to 25 for seated service."
-        image="/media/loc-fohi.png"
+        image="/media/loc-fohi.jpg"
         imageAlt="Mojo dining room energy"
         actions={
           <>
@@ -66,7 +66,7 @@ export function EventsPage() {
 
             <div className="mt-10 relative aspect-[4/3] border-2 border-current overflow-hidden">
               <MediaImage
-                src="/media/loc-rvc.png"
+                src="/media/loc-rvc.jpg"
                 alt="Mojo Rockville Centre"
                 className="absolute inset-0 h-full w-full object-cover"
               />

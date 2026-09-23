@@ -4,9 +4,9 @@ import { MediaImage } from '../lib/MediaImage'
 import { links } from '../data/links'
 
 const TILES = [
-  { src: '/media/hit-01.png', label: 'Tacos' },
-  { src: '/media/hit-02.png', label: 'Ceviche' },
-  { src: '/media/hit-05.png', label: 'Cocktails' },
+  { src: '/media/hit-01.jpg', label: 'Tacos' },
+  { src: '/media/hit-02.jpg', label: 'Ceviche' },
+  { src: '/media/hit-05.jpg', label: 'Cocktails' },
 ] as const
 
 export function OrderPage() {
@@ -16,7 +16,7 @@ export function OrderPage() {
         label="Takeout & delivery"
         title="Order Online"
         body="Fresh tacos, empanadas, ceviche, burgers, and more — brunch, lunch, or dinner from Forest Hills on Toast."
-        image="/media/hit-01.png"
+        image="/media/hit-01.jpg"
         imageAlt="Baja shrimp tacos"
         tall
         actions={
@@ -51,7 +51,7 @@ export function OrderPage() {
       <section className="relative border-t-2 border-current">
         <div className="absolute inset-0">
           <MediaImage
-            src="/media/crave-heat.png"
+            src="/media/crave-heat.jpg"
             alt=""
             className="h-full w-full object-cover opacity-30"
           />

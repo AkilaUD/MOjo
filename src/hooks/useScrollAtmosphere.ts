@@ -1,14 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 /**
  * Stay day-cream through Crave + Plate Hits + Menu.
  * Night ramp only when After Dark enters view.
+ * rAF-throttled; skips React state when phase is unchanged.
  */
 export function useScrollAtmosphere() {
-  const [phase, setPhase] = useState(0)
-
   useEffect(() => {
     const root = document.documentElement
+    let raf = 0
+    let lastPhase = -1
 
     const lerp = (a: number, b: number, t: number) => a + (b - a) * t
     const hexToRgb = (hex: string) => {
@@ -29,6 +30,8 @@ export function useScrollAtmosphere() {
     }
 
     const setDay = () => {
+      if (lastPhase === 0) return
+      lastPhase = 0
       root.style.setProperty('--mojo-phase', '0')
       root.style.setProperty('--mojo-bg', '#FFF3D6')
       root.style.setProperty('--mojo-ink', '#160D0A')
@@ -38,10 +41,10 @@ export function useScrollAtmosphere() {
         'color-mix(in srgb, #160D0A 68%, transparent)',
       )
       root.style.colorScheme = 'light'
-      setPhase(0)
     }
 
-    const update = () => {
+    const apply = () => {
+      raf = 0
       const afterDark = document.getElementById('after-dark')
       if (!afterDark) {
         setDay()
@@ -54,16 +57,17 @@ export function useScrollAtmosphere() {
       const end = sectionTop + afterDark.offsetHeight * 0.9
       const y = window.scrollY
 
-      let p = 0
       if (y < start) {
         setDay()
         return
       }
-      if (y > end) p = 1
-      else p = (y - start) / Math.max(end - start, 1)
 
+      let p = y > end ? 1 : (y - start) / Math.max(end - start, 1)
       p = Math.max(0, Math.min(1, p))
-      setPhase(p)
+      const rounded = Math.round(p * 100) / 100
+      if (rounded === lastPhase) return
+      lastPhase = rounded
+
       root.style.setProperty('--mojo-phase', String(p))
 
       const bg =
@@ -87,14 +91,18 @@ export function useScrollAtmosphere() {
       root.style.colorScheme = p >= 0.3 ? 'dark' : 'light'
     }
 
-    update()
-    window.addEventListener('scroll', update, { passive: true })
-    window.addEventListener('resize', update)
+    const onScroll = () => {
+      if (raf) return
+      raf = window.requestAnimationFrame(apply)
+    }
+
+    apply()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
     return () => {
-      window.removeEventListener('scroll', update)
-      window.removeEventListener('resize', update)
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+      if (raf) cancelAnimationFrame(raf)
     }
   }, [])
-
-  return phase
 }

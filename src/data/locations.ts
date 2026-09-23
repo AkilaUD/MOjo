@@ -36,7 +36,7 @@ export const locations: Location[] = [
     ],
     reserveHref: links.opentableFoHi,
     mapsHref: links.mapsFoHi,
-    image: '/media/loc-fohi.png',
+    image: '/media/loc-fohi.jpg',
     note: 'Where Mojo began — 2019.',
   },
   {
@@ -57,7 +57,7 @@ export const locations: Location[] = [
     ],
     reserveHref: links.opentableRvc,
     mapsHref: links.mapsRvc,
-    image: '/media/loc-rvc.png',
+    image: '/media/loc-rvc.jpg',
     note: 'The Mojo expansion — same heat, new room.',
   },
 ]

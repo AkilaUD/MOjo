@@ -32,22 +32,33 @@ export function AfterDark() {
   useEffect(() => {
     const el = ref.current
     if (!el) return
+    let raf = 0
+    let last = -1
 
     const update = () => {
+      raf = 0
       const rect = el.getBoundingClientRect()
       const total = el.offsetHeight - window.innerHeight
       const scrolled = -rect.top
       const p = total > 0 ? Math.max(0, Math.min(1, scrolled / total)) : 0
       const i = Math.min(3, Math.max(0, Math.floor(p * 4)))
+      if (i === last) return
+      last = i
       setPhaseLabel(PHASES[i].label)
     }
 
+    const onScroll = () => {
+      if (raf) return
+      raf = window.requestAnimationFrame(update)
+    }
+
     update()
-    window.addEventListener('scroll', update, { passive: true })
-    window.addEventListener('resize', update)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
     return () => {
-      window.removeEventListener('scroll', update)
-      window.removeEventListener('resize', update)
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+      if (raf) cancelAnimationFrame(raf)
     }
   }, [])
 

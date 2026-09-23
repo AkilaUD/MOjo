@@ -49,19 +49,17 @@ export function SocialReel() {
               </figcaption>
             </figure>
           ))}
-          {/* Duplicate for seamless marquee — hidden from AT */}
+          {/* Duplicate strip uses CSS backgrounds (cached, no second decode tree) */}
           {!reduced &&
             socialFrames.map((frame) => (
               <figure
                 key={`dup-${frame.id}`}
                 aria-hidden="true"
-                className="relative w-[62vw] sm:w-[40vw] md:w-[28vw] lg:w-[22vw] aspect-[3/4] border-2 border-current overflow-hidden shrink-0"
+                className="relative w-[62vw] sm:w-[40vw] md:w-[28vw] lg:w-[22vw] aspect-[3/4] border-2 border-current overflow-hidden shrink-0 bg-cover bg-center"
+                style={{
+                  backgroundImage: `image-set(url("${frame.src.replace(/\.(png|jpe?g)$/i, '.webp')}") type("image/webp"), url("${frame.src}"))`,
+                }}
               >
-                <MediaImage
-                  src={frame.src}
-                  alt=""
-                  className="h-full w-full object-cover"
-                />
                 <figcaption className="absolute bottom-0 inset-x-0 p-3 mojo-label text-cream bg-gradient-to-t from-espresso/90 to-transparent">
                   {frame.alt}
                 </figcaption>
@@ -77,9 +75,10 @@ export function SocialReel() {
         }
         .animate-mojo-reel {
           animation: mojo-reel 48s linear infinite;
+          will-change: transform;
         }
         @media (prefers-reduced-motion: reduce) {
-          .animate-mojo-reel { animation: none; }
+          .animate-mojo-reel { animation: none; will-change: auto; }
         }
       `}</style>
     </section>

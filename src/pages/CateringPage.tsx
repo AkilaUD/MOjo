@@ -7,10 +7,10 @@ import { MediaImage } from '../lib/MediaImage'
 import { links } from '../data/links'
 
 const KITCHEN_RAIL = [
-  { src: '/media/hit-03.png', label: 'Churrasco' },
-  { src: '/media/hit-01.png', label: 'Tacos' },
-  { src: '/media/hit-02.png', label: 'Ceviche' },
-  { src: '/media/hit-04.png', label: 'Empanadas' },
+  { src: '/media/hit-03.jpg', label: 'Churrasco' },
+  { src: '/media/hit-01.jpg', label: 'Tacos' },
+  { src: '/media/hit-02.jpg', label: 'Ceviche' },
+  { src: '/media/hit-04.jpg', label: 'Empanadas' },
 ] as const
 
 export function CateringPage() {
@@ -22,7 +22,7 @@ export function CateringPage() {
         label="Off-site"
         title="Catering"
         body="From sizzling churrasco to zesty ceviches, tacos, and empanadas — Mojo catering brings Latin fusion to corporate events, office luncheons, and celebrations of all sizes."
-        image="/media/hit-03.png"
+        image="/media/hit-03.jpg"
         imageAlt="Churrasco spread"
         tall
         actions={

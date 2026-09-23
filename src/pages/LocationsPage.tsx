@@ -9,7 +9,7 @@ export function LocationsPage() {
         label="Two rooms"
         title="Locations"
         body="Forest Hills in Queens and Rockville Centre on Long Island — same Mojo, two neighborhoods."
-        image="/media/loc-rvc.png"
+        image="/media/loc-rvc.jpg"
         imageAlt="Mojo Rockville Centre"
         actions={
           <>

@@ -28,13 +28,13 @@ const FOOD_CATS: MenuCategory[] = [
 
 const CATEGORY_IMAGE: Partial<Record<MenuCategory, string>> = {
   APPETIZERS: '/media/food-guac.jpg',
-  SALADS: '/media/crave-fresh.png',
-  CEVICHE: '/media/hit-02.png',
-  ENTREES: '/media/hit-03.png',
-  SANDWICHES: '/media/crave-smoke.png',
-  BRUNCH: '/media/crave-sweet.png',
+  SALADS: '/media/crave-fresh.jpg',
+  CEVICHE: '/media/hit-02.jpg',
+  ENTREES: '/media/hit-03.jpg',
+  SANDWICHES: '/media/crave-smoke.jpg',
+  BRUNCH: '/media/crave-sweet.jpg',
   DESSERTS: '/media/food-dessert.jpg',
-  COCKTAILS: '/media/hit-05.png',
+  COCKTAILS: '/media/hit-05.jpg',
 }
 
 function catsForDaypart(d: Daypart): MenuCategory[] {
@@ -74,7 +74,7 @@ export function MenuPage() {
         label="Full catalog"
         title="Menu"
         body={`Every plate and pour from the Mojo kitchen — ${menuItems.length} items. Prices reflect dinner; brunch and lunch may vary.`}
-        image="/media/hit-02.png"
+        image="/media/hit-02.jpg"
         imageAlt="Mojo ceviche"
         actions={
           <>
@@ -160,7 +160,7 @@ export function MenuPage() {
       <div className="px-4 md:px-10 py-10 md:py-14 max-w-5xl mx-auto space-y-16">
         {[...grouped.entries()].map(([cat, list]) => {
           const banner =
-            CATEGORY_IMAGE[cat] ?? list[0]?.image ?? '/media/hit-02.png'
+            CATEGORY_IMAGE[cat] ?? list[0]?.image ?? '/media/hit-02.jpg'
           return (
             <section key={cat} id={`menu-${cat.toLowerCase()}`}>
               <div className="relative mb-6 aspect-[21/9] md:aspect-[3/1] border-2 border-current overflow-hidden">

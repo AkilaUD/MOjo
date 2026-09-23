@@ -60,7 +60,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Vegan chorizo', 'Cactus', 'Tostada', 'Habanero avocado'],
     price: '$13',
     tags: ['Vegetarian'],
-    image: '/media/crave-fresh.png',
+    image: '/media/crave-fresh.jpg',
   },
   {
     id: 'chicken-taquitos',
@@ -81,7 +81,7 @@ export const menuItems: MenuItem[] = [
       'Crispy calamari, yuca fries, pickled onions served with tartare sauce and lime wedge.',
     ingredients: ['Calamari', 'Yuca', 'Pickled onion', 'Tartare'],
     price: '$17',
-    image: '/media/hit-02.png',
+    image: '/media/hit-02.jpg',
   },
   {
     id: 'empanada-beef',
@@ -90,7 +90,7 @@ export const menuItems: MenuItem[] = [
     description: 'Hand-folded beef empanada — diced skirt steak, red onions, aji panca.',
     ingredients: ['Beef', 'Aji panca', 'Onion'],
     price: '$13',
-    image: '/media/hit-04.png',
+    image: '/media/hit-04.jpg',
     featured: true,
   },
   {
@@ -112,7 +112,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Chicken', 'Mango', 'Valentina', 'Blue cheese'],
     price: '$17',
     tags: ['Mild'],
-    image: '/media/crave-heat.png',
+    image: '/media/crave-heat.jpg',
     featured: true,
   },
   {
@@ -123,7 +123,7 @@ export const menuItems: MenuItem[] = [
       'Battered shrimp, mini flour tortillas, mango slaw, avocado crema, micro cilantro.',
     ingredients: ['Shrimp', 'Mango slaw', 'Avocado crema', 'Flour tortilla'],
     price: '$15',
-    image: '/media/hit-01.png',
+    image: '/media/hit-01.jpg',
     featured: true,
   },
   {
@@ -134,7 +134,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Corn', 'Tajín', 'Cotija', 'Chipotle'],
     price: '$12',
     tags: ['Vegetarian'],
-    image: '/media/crave-fresh.png',
+    image: '/media/crave-fresh.jpg',
   },
   {
     id: 'shrimp-al-ajillo',
@@ -144,7 +144,7 @@ export const menuItems: MenuItem[] = [
       'Shrimp sautéed in creamy garlic sauce served with sliced toasted baguette.',
     ingredients: ['Shrimp', 'Garlic', 'Cream', 'Baguette'],
     price: '$19',
-    image: '/media/hit-01.png',
+    image: '/media/hit-01.jpg',
   },
   {
     id: 'chicken-pozole',
@@ -154,7 +154,7 @@ export const menuItems: MenuItem[] = [
       'Hominy in a rich red chicken broth, topped with lettuce, radish, micro cilantro, served with tortilla chips.',
     ingredients: ['Chicken', 'Hominy', 'Radish', 'Broth'],
     price: '$17',
-    image: '/media/crave-heat.png',
+    image: '/media/crave-heat.jpg',
   },
 
   // ── Salads ──────────────────────────────────────────────────
@@ -167,7 +167,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Avocado', 'Mango', 'Pineapple', 'Maracuyá'],
     price: '$17',
     tags: ['Vegan'],
-    image: '/media/crave-fresh.png',
+    image: '/media/crave-fresh.jpg',
   },
   {
     id: 'apple-kale-salad',
@@ -177,7 +177,7 @@ export const menuItems: MenuItem[] = [
       'Spinach, kale, apple, endive, cotija cheese, crispy Tajín chickpeas, apple vinaigrette.',
     ingredients: ['Kale', 'Apple', 'Cotija', 'Chickpeas'],
     price: '$15',
-    image: '/media/crave-fresh.png',
+    image: '/media/crave-fresh.jpg',
   },
   {
     id: 'mexican-caesar',
@@ -187,7 +187,7 @@ export const menuItems: MenuItem[] = [
       'Romaine, pickled cactus, radish, plantain croutons, shaved Parmesan, smoked chipotle dressing.',
     ingredients: ['Romaine', 'Cactus', 'Plantain', 'Chipotle'],
     price: '$15',
-    image: '/media/crave-fresh.png',
+    image: '/media/crave-fresh.jpg',
   },
 
   // ── Ceviche Bar ─────────────────────────────────────────────
@@ -199,7 +199,7 @@ export const menuItems: MenuItem[] = [
       'Diced white fish, calamari, shrimp, red onions in a zesty Aji Amarillo lime sauce topped with fried calamari and chifles.',
     ingredients: ['White fish', 'Calamari', 'Shrimp', 'Aji Amarillo', 'Lime'],
     price: '$19',
-    image: '/media/hit-02.png',
+    image: '/media/hit-02.jpg',
     featured: true,
   },
   {
@@ -210,7 +210,7 @@ export const menuItems: MenuItem[] = [
       'Shrimp & white fish cured in jalapeño leche de tigre, onions, cilantro, diced sweet potatoes, crispy cancha, micro cilantro, served with chifles.',
     ingredients: ['Shrimp', 'White fish', 'Leche de tigre', 'Sweet potato'],
     price: '$21',
-    image: '/media/crave-citrus.png',
+    image: '/media/crave-citrus.jpg',
   },
   {
     id: 'salmon-tartar-tacos',
@@ -254,7 +254,7 @@ export const menuItems: MenuItem[] = [
       'Grilled char siu marinated diced chicken thighs, white rice, onions, ginger, scallions, scrambled eggs tossed with soy sauce & sesame oil. (Vegetarian option available)',
     ingredients: ['Chicken', 'Rice', 'Soy', 'Sesame', 'Egg'],
     price: '$24',
-    image: '/media/crave-smoke.png',
+    image: '/media/crave-smoke.jpg',
   },
   {
     id: 'jumpin-lomo',
@@ -264,7 +264,7 @@ export const menuItems: MenuItem[] = [
       'Stir fry skirt steak chunks, tomatoes, and red onions in a smoked soy sauce reduction served with white rice on a bed of truffle fries.',
     ingredients: ['Skirt steak', 'Soy', 'Tomato', 'Truffle fries'],
     price: '$33',
-    image: '/media/hit-03.png',
+    image: '/media/hit-03.jpg',
     featured: true,
   },
   {
@@ -307,7 +307,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Mushrooms', 'Soy', 'Truffle fries', 'Garlic rice'],
     price: '$23',
     tags: ['Vegetarian'],
-    image: '/media/crave-smoke.png',
+    image: '/media/crave-smoke.jpg',
   },
   {
     id: 'grilled-chicken-chimichurri',
@@ -328,7 +328,7 @@ export const menuItems: MenuItem[] = [
       '8oz beef blend, remoulade, spicy ketchup, lettuce, tomatoes, sharp cheddar, bacon on a brioche bun.',
     ingredients: ['Beef', 'Cheddar', 'Bacon', 'Brioche'],
     price: '$23',
-    image: '/media/crave-smoke.png',
+    image: '/media/crave-smoke.jpg',
   },
   {
     id: 'quinoa-burger',
@@ -339,7 +339,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Quinoa', 'Black bean', 'Avocado', 'Chipotle'],
     price: '$15',
     tags: ['Vegetarian'],
-    image: '/media/crave-fresh.png',
+    image: '/media/crave-fresh.jpg',
   },
   {
     id: 'poblano-chicken-sandwich',
@@ -349,7 +349,7 @@ export const menuItems: MenuItem[] = [
       'Buttermilk chicken breast, queso frito, roasted poblano aioli, jícama sauce, avocado cream on a brioche bun. Comes with cut fries or salad.',
     ingredients: ['Chicken', 'Poblano', 'Queso frito', 'Brioche'],
     price: '$17',
-    image: '/media/crave-heat.png',
+    image: '/media/crave-heat.jpg',
   },
   {
     id: 'steak-sandwich',
@@ -359,7 +359,7 @@ export const menuItems: MenuItem[] = [
       'Chopped grilled skirt steak, baby arugula, Swiss cheese, caramelized onions, chipotle aioli on ciabatta. Comes with cut fries or salad.',
     ingredients: ['Skirt steak', 'Swiss', 'Chipotle', 'Ciabatta'],
     price: '$23',
-    image: '/media/hit-03.png',
+    image: '/media/hit-03.jpg',
   },
 
   // ── Brunch (Sat–Sun 11am–3pm) ───────────────────────────────
@@ -371,7 +371,7 @@ export const menuItems: MenuItem[] = [
       'Mashed green plantains, pickled onions, fried cheese, fried salami, and 2 eggs sunny side up.',
     ingredients: ['Plantain', 'Salami', 'Fried cheese', 'Eggs'],
     price: '$17',
-    image: '/media/crave-smoke.png',
+    image: '/media/crave-smoke.jpg',
     featured: true,
   },
   {
@@ -382,7 +382,7 @@ export const menuItems: MenuItem[] = [
       'Fried buttermilk-battered chicken breast, classic Belgian waffle, turkey bacon gravy and maple syrup.',
     ingredients: ['Chicken', 'Waffle', 'Gravy', 'Maple'],
     price: '$25',
-    image: '/media/crave-sweet.png',
+    image: '/media/crave-sweet.jpg',
     featured: true,
   },
   {
@@ -413,7 +413,7 @@ export const menuItems: MenuItem[] = [
       'Baked brioche, fresh berries, vanilla mascarpone, served with syrup.',
     ingredients: ['Brioche', 'Berries', 'Mascarpone'],
     price: '$17',
-    image: '/media/crave-sweet.png',
+    image: '/media/crave-sweet.jpg',
   },
   {
     id: 'avocado-toast',
@@ -424,7 +424,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Avocado', 'Tomato', 'Chipotle', 'Multigrain'],
     price: '$13',
     tags: ['Vegetarian'],
-    image: '/media/crave-fresh.png',
+    image: '/media/crave-fresh.jpg',
   },
   {
     id: 'steak-eggs-benedict',
@@ -435,7 +435,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Steak', 'Eggs', 'Hollandaise', 'Spinach'],
     price: '$22',
     tags: ['Featured'],
-    image: '/media/hit-03.png',
+    image: '/media/hit-03.jpg',
   },
   {
     id: 'fried-catfish',
@@ -444,7 +444,7 @@ export const menuItems: MenuItem[] = [
     description: 'Served with white rice, maduros, and salad. Also on lunch.',
     ingredients: ['Catfish', 'Rice', 'Maduros', 'Salad'],
     price: '$14',
-    image: '/media/hit-02.png',
+    image: '/media/hit-02.jpg',
   },
 
   // ── Desserts ────────────────────────────────────────────────
@@ -466,7 +466,7 @@ export const menuItems: MenuItem[] = [
     description: 'Tres leche sponge cake topped with crunchy milk.',
     ingredients: ['Milk', 'Sponge', 'Cream'],
     price: '$9',
-    image: '/media/crave-sweet.png',
+    image: '/media/crave-sweet.jpg',
     featured: true,
   },
   {
@@ -497,7 +497,7 @@ export const menuItems: MenuItem[] = [
     description: 'Ketel One vodka, passion fruit, grapefruit, ginger beer.',
     ingredients: ['Vodka', 'Passion fruit', 'Grapefruit', 'Ginger beer'],
     price: '$15',
-    image: '/media/hit-05.png',
+    image: '/media/hit-05.jpg',
     featured: true,
   },
   {
@@ -547,7 +547,7 @@ export const menuItems: MenuItem[] = [
     description: 'Gin, elderflower, guava puree, habanero agave, lime juice.',
     ingredients: ['Gin', 'Elderflower', 'Guava', 'Habanero'],
     price: '$15',
-    image: '/media/social-1.png',
+    image: '/media/social-1.jpg',
   },
   {
     id: 'lulada-spritz',
@@ -576,7 +576,7 @@ export const menuItems: MenuItem[] = [
     description: 'Cognac, amaretto, Lillet Blanc, hibiscus, orange bitters.',
     ingredients: ['Cognac', 'Amaretto', 'Hibiscus'],
     price: '$17',
-    image: '/media/social-1.png',
+    image: '/media/social-1.jpg',
   },
   {
     id: 'pisco-passion',
@@ -585,7 +585,7 @@ export const menuItems: MenuItem[] = [
     description: 'Pisco, passion fruit, Aperol, lime.',
     ingredients: ['Pisco', 'Passion fruit', 'Aperol', 'Lime'],
     price: '$15',
-    image: '/media/hit-05.png',
+    image: '/media/hit-05.jpg',
     featured: true,
   },
   {
@@ -625,7 +625,7 @@ export const menuItems: MenuItem[] = [
     description: 'Rum, coconut milk, pineapple, vanilla.',
     ingredients: ['Rum', 'Coconut', 'Pineapple'],
     price: '$12',
-    image: '/media/social-1.png',
+    image: '/media/social-1.jpg',
   },
   {
     id: 'froze',
@@ -635,7 +635,7 @@ export const menuItems: MenuItem[] = [
       'Rosé wine, Smirnoff watermelon vodka, vermouth, strawberry, watermelon, peach.',
     ingredients: ['Rosé', 'Vodka', 'Strawberry', 'Watermelon'],
     price: '$12',
-    image: '/media/hit-05.png',
+    image: '/media/hit-05.jpg',
   },
   {
     id: 'blue-hawaiian',
@@ -645,7 +645,7 @@ export const menuItems: MenuItem[] = [
       'Vodka, rum, blue curaçao, coconut water, coconut cream, pineapple.',
     ingredients: ['Vodka', 'Rum', 'Curaçao', 'Pineapple'],
     price: '$12',
-    image: '/media/social-1.png',
+    image: '/media/social-1.jpg',
   },
   {
     id: 'pink-flamingo',
@@ -654,7 +654,7 @@ export const menuItems: MenuItem[] = [
     description: 'Frozé + Margarita.',
     ingredients: ['Frozé', 'Margarita'],
     price: '$12',
-    image: '/media/hit-05.png',
+    image: '/media/hit-05.jpg',
   },
   {
     id: 'rosa-azul',
@@ -663,7 +663,7 @@ export const menuItems: MenuItem[] = [
     description: 'Frozé + Blue Hawaiian.',
     ingredients: ['Frozé', 'Blue Hawaiian'],
     price: '$12',
-    image: '/media/social-1.png',
+    image: '/media/social-1.jpg',
   },
   {
     id: 'henny-colada',
@@ -672,7 +672,7 @@ export const menuItems: MenuItem[] = [
     description: 'Hennessy twist on the classic piña colada.',
     ingredients: ['Hennessy', 'Coconut', 'Pineapple'],
     price: '$18',
-    image: '/media/social-1.png',
+    image: '/media/social-1.jpg',
   },
   {
     id: 'virgin-nojito',
@@ -692,7 +692,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Tomato', 'Spice', 'Lime'],
     price: '$9',
     tags: ['Mocktail'],
-    image: '/media/crave-heat.png',
+    image: '/media/crave-heat.jpg',
   },
   {
     id: 'passion-ginger-mule',
@@ -702,7 +702,7 @@ export const menuItems: MenuItem[] = [
     ingredients: ['Passion fruit', 'Ginger'],
     price: '$11',
     tags: ['Mocktail'],
-    image: '/media/hit-05.png',
+    image: '/media/hit-05.jpg',
   },
 ]
 

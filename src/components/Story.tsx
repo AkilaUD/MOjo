@@ -36,7 +36,7 @@ export function Story() {
         </div>
         <div className="aspect-[4/5] border-2 border-current overflow-hidden">
           <MediaImage
-            src="/media/loc-fohi.png"
+            src="/media/loc-fohi.jpg"
             alt="Mojo dining room"
             className="h-full w-full object-cover"
           />

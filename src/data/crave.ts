@@ -19,7 +19,7 @@ export const craveDials: CraveDial[] = [
     accent: '#8F2D14',
     punch: 'Chili that sticks to the lips.',
     ingredients: ['Habanero', 'Valentina', 'Mango'],
-    plate: '/media/crave-heat.png',
+    plate: '/media/crave-heat.jpg',
     itemIds: ['mojo-wings', 'guac-chips', 'el-chamuco'],
   },
   {
@@ -28,7 +28,7 @@ export const craveDials: CraveDial[] = [
     accent: '#F2A23A',
     punch: 'Acid bright enough to wake the room.',
     ingredients: ['Lime', 'Aji Amarillo', 'Passion'],
-    plate: '/media/crave-citrus.png',
+    plate: '/media/crave-citrus.jpg',
     itemIds: ['down-the-hatch', 'peruvian-ceviche', 'pisco-passion'],
   },
   {
@@ -37,7 +37,7 @@ export const craveDials: CraveDial[] = [
     accent: '#160D0A',
     punch: 'Char from the grill. Depth in the glass.',
     ingredients: ['Chimichurri', 'Skirt steak', 'Mezcal'],
-    plate: '/media/crave-smoke.png',
+    plate: '/media/crave-smoke.jpg',
     itemIds: ['churrasco', 'jumpin-lomo', 'chocolate-old-fashioned'],
   },
   {
@@ -46,7 +46,7 @@ export const craveDials: CraveDial[] = [
     accent: '#E83E8C',
     punch: 'Dulce after the fire.',
     ingredients: ['Cuatro leches', 'Churro', 'Passion'],
-    plate: '/media/crave-sweet.png',
+    plate: '/media/crave-sweet.jpg',
     itemIds: ['cuatro-leches', 'churros', 'passion-mula'],
   },
   {
@@ -55,7 +55,7 @@ export const craveDials: CraveDial[] = [
     accent: '#A7C957',
     punch: 'Herbs, crunch, cold bar energy.',
     ingredients: ['Avocado', 'Cilantro', 'Mint'],
-    plate: '/media/crave-fresh.png',
+    plate: '/media/crave-fresh.jpg',
     itemIds: ['guac-chips', 'vegan-ceviche', 'mojito'],
   },
 ]

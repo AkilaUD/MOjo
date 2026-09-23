@@ -36,6 +36,7 @@ export function PageHero({
           alt={imageAlt}
           className="h-full w-full object-cover"
           loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/55 to-espresso/25" />
         <div className="absolute inset-0 bg-gradient-to-r from-espresso/80 via-espresso/35 to-transparent" />

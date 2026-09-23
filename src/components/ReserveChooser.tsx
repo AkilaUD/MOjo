@@ -9,7 +9,7 @@ const rooms = [
     detail: 'Lunch · Brunch · Dinner · Happy Hour',
     href: links.opentableFoHi,
     cta: 'Reserve Forest Hills',
-    image: '/media/loc-fohi.png',
+    image: '/media/loc-fohi.jpg',
   },
   {
     region: 'Long Island',
@@ -17,7 +17,7 @@ const rooms = [
     detail: 'Brunch · Dinner · Late Night',
     href: links.opentableRvc,
     cta: 'Reserve Rockville Centre',
-    image: '/media/loc-rvc.png',
+    image: '/media/loc-rvc.jpg',
   },
 ] as const
 
